@@ -1,0 +1,11 @@
+import numpy as np
+a = np.arange(1,101).reshape(10,10)
+b = a**2
+c = b%3
+d = b[b%3==0]
+print(b)
+print(c)
+print(d)
+np.save('div_by_3', b)
+np.save('div_by_3', c)
+np.save('div_by_3', d)
